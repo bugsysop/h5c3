@@ -368,21 +368,26 @@ figcaption {}
 
 /** Code **/
 
-pre code {
-	word-wrap: normal;
-	white-space: -moz-pre-wrap;
-	white-space: pre-wrap;
-	font-face: Monaco, monospace, Courier, "Courier New";
-}
-
-pre {
-	white-space: pre;
+pre { margin-bottom: 20px; 
+	border: 1px #EEE solid;
 }
 
 code {
 	white-space: pre;
-	font-face: Monaco, monospace, Courier, "Courier New";
+	font-family: Courier, "Courier New", Monaco, monospace;
+	font-size: 95%;
 }
+
+pre code
+{
+	word-wrap: normal;
+	white-space: pre-wrap;
+	font-family: Courier, "Courier New", Monaco, monospace;
+	line-height: 130%;
+	font-size: 85%
+	
+}
+
 
 /** Lists **/
 
