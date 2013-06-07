@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+/* Base Typography
+================================================== */
+
+html {
+	/* font: normal 112.5%/1.65 serif; */
+	font: normal 112.5%/1.65 Georgia, "Times New Roman", serif;
+}
+
+body {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	color: #774553;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-rendering: optimizeLegibility;
+	margin-top: 0;
+	color: #774553;
+}
+
+.tera {
+	font-size: 117px;
+	font-size: 6.5rem;
+	margin-bottom: 0.25385rem;}
+
+.giga {
+	font-size: 90px;
+	font-size: 5rem;
+	margin-bottom: 0.33rem; }
+
+.mega {
+	font-size: 72px;
+	font-size: 4rem;
+	margin-bottom: 0.4125rem; }
+
+h1 {
+	font-size: 60px;
+	font-size: 3.33333rem;
+	margin-bottom: 0.495rem; }
+
+h2 {
+	font-size: 48px;
+	font-size: 2.66667rem;
+	margin-bottom: 0.61875rem; }
+
+h3 {
+	font-size: 36px;
+	font-size: 2rem;
+	margin-bottom: 0.825rem; }
+
+h4 {
+	font-size: 24px;
+	font-size: 1.33333rem;
+	margin-bottom: 1.2375rem; }
+
+h5 {
+	font-size: 21px;
+	font-size: 1.16667rem;
+	margin-bottom: 1.41429rem; }
+
+h6 {
+	font-size: 18px;
+	font-size: 1rem;
+	margin-bottom: 1.65rem; }
+
+/** Hyphens **/
+
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+	/* Accepted values: [ none | manual | auto ] */
+	-webkit-hyphens: none; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+	-moz-hyphens: none; /* Firefox 16 thru 20 */
+	-ms-hyphens: none; /* IE10 */
+	-o-hyphens: none;	 /* PRESTO...haha LOL */
+	hyphens: none;	 /* W3C standard */
+}
+
+/* Text Elements
+================================================== */
+
+p { margin: 0 0 1em; }
+
+p + p {
+	/* text-indent: 1.5em;
+	margin-top: -1.5em; */
+}
+
+.drop-cap:first-letter {
+	float: left;
+	margin: 0;
+	padding: 0.125em 0.125em 0 0;
+	font-size: 5.8em;
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 0.55;
+	text-indent: 0;
+	background: transparent;
+	color: inherit; }
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+
+big { font-size: 120%; }
+small { font-size: 80%; }
+
+sub, sup {
+    font-size: 75%;
+    letter-spacing: .1em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+sup { top: -0.46em; }
+sub { bottom: -0.24em; }
+
+del, s, strike {
+	text-decoration: line-through; 
+}
+
+ins, dfn {
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: 1px solid #666;
+}
+
+/** Abbreviations Markup
+  *
+   <abbr title="hyper text markup language">HMTL</abbr>
+  */
+ 
+abbr {
+	/* font-variant: small-caps;
+	text-transform: lowercase;
+	font-weight: 600; */
+	font-size: 0.8em;
+	text-transform: uppercase; 
+	letter-spacing: .1em;
+	font-weight: bold;
+	color: gray; }
+	
+abbr:hover { cursor: help; }
+
+acronym {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	border-bottom: 1px dashed #666;
+	cursor: help;
+	}
+
+/** All Capital Text **/
+/*
+.capitals {
+	font-variant: small-caps;
+	font-weight: 300;
+	text-transform: lowercase; }
+*/
+
+/** Unicode Ampersand **/
+
+@font-face {
+	font-family: "Ampersand";
+	src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+	unicode-range: U+0026;
+}
+
+@font-face {
+	font-family: "Ampersand";
+	src: local("Georgia");
+	unicode-range: U+270C;
+}
+
+.amp {
+	font-family: Ampersand, Georgia, serif;
+}
+
+/**
+ * Lining Definition Style Markup
+ *
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.lining dt,
+.lining dd {
+	display: inline;
+	margin: 0;
+}
+.lining dt + dt:before,
+.lining dd + dt:before {
+	content: "\A";
+	white-space: pre;
+}
+.lining dd + dd:before {
+	content: ", ";
+}
+.lining dd:before {
+	content: ": ";
+	margin-left: -0.2rem;
+}
+
+/**
+ * Dictionary Definition Style Markup
+ *
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.dictionary-style dt {
+	display: inline;
+	counter-reset: definitions;
+}
+.dictionary-style dt + dt:before {
+	content: ", ";
+	margin-left: -0.2rem;
+}
+.dictionary-style dd {
+	display: block;
+	counter-increment: definitions;
+}
+.dictionary-style dd:before {
+	content: counter(definitions, decimal) ". ";
+}
+
+/** Stats Tab Markup
+ *
+	<ul class="stats-tabs">
+		<li><a href="#">[value]<b>[name]</b></a></li>
+	</ul>
+  *
+  */
+  
+.stats-tabs {
+	padding: 0;
+}
+.stats-tabs li {
+	display: inline-block;
+	margin: 0 0.625rem 0 0;
+	padding: 0 0.625rem 0 0;
+	border-right: 0.125rem solid #cccccc;
+}
+.stats-tabs li:last-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.stats-tabs li a {
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.stats-tabs li a b {
+	display: block;
+	margin: 0.125rem 0 0 0;
+	font-size: 0.875rem;
+	font-weight: normal;
+}
+
+/** Blockquote Markup
+  *
+	<blockquote cite="">
+		<p>&Prime;&Prime;</p>
+		<cite>
+			<a href=""></a>
+		</cite>
+	</blockquote>
+  * .
+  */
+
+blockquote {
+	font-style: italic;
+	margin-bottom: 1.5em;
+}
+
+blockquote cite {
+	display: block;
+}
+
+/** Pull Quotes Markup
+  *
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
+  *
+  */
+.pull-quote {
+	position: relative;
+	padding: 1em;
+}
+.pull-quote:before,
+.pull-quote:after {
+	height: 1em;
+	opacity: 0.25;
+	position: absolute;
+	font-size: 72px;
+	font-size: 4rem;
+}
+.pull-quote:before {
+	content: '“';
+	top:  0;
+	left: 0;
+}
+.pull-quote:after {
+	content: '”';
+	bottom: 0;
+	right: 0;
+}
+
+/** Figures Markup
+  *
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
+  *
+  */
+
+figure {}
+figcaption {}
+
+/** Footnote Markup : Replace 'X' with your unique number for each footnote
+  *
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
+  *
+  */
+
+/** Code **/
+
+pre code {
+	word-wrap: normal;
+	white-space: -moz-pre-wrap;
+	white-space: pre-wrap;
+	font-face: Monaco, monospace, Courier, "Courier New";
+}
+
+pre {
+	white-space: pre;
+}
+
+code {
+	white-space: pre;
+	font-face: Monaco, monospace, Courier, "Courier New";
+}
+
+/** Lists **/
+
+
+ul {
+	list-style: disc outside;
+	list-style-color: #774553;
+	margin-left: 3em;
+	margin-bottom: 1em;
+	margin-top: -0.3em;
+}
+
+ol {
+	list-style: decimal outside;
+	list-style-color: #774553;
+	margin-left: 3em;
+	margin-bottom: 1em;
+	margin-top: -0.3em;
+}
+
+li {}
