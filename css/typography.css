@@ -290,13 +290,23 @@ acronym {
   */
 
 blockquote {
-	font-style: italic;
-	margin-bottom: 1.5em;
+	font-style: normal;
+	margin: 1.5em 50px;
 }
 
 blockquote cite {
 	display: block;
+	font-style: normal;
+	font-size: .75em;
+	text-align: right;
+	margin-top: .35em;
+	margin-bottom: -1em;
 }
+
+blockquote cite:before { content: "– "; }
+blockquote cite .author { text-transform: uppercase; letter-spacing: .1em; }
+blockquote cite .reference { font-style: italic; font-size: 1.15em; }
+
 
 /** Pull Quotes Markup
 	---
