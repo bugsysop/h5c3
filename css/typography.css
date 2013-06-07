@@ -4,9 +4,7 @@
 ================================================== */
 
 html {
-	/* font: normal 112.5%/1.65 serif; */
-	font: normal 112.5%/1.65 Georgia, "Times New Roman", serif;
-}
+	font: normal 112.5%/1.65 Georgia, Garamond, "Times New Roman", serif; }
 
 body {
 	-webkit-hyphens: auto;
@@ -14,8 +12,7 @@ body {
 	-ms-hyphens: auto;
 	hyphens: auto;
 	word-wrap: break-word;
-	color: #774553;
-}
+	color: #774553; }
 
 h1,
 h2,
@@ -25,8 +22,7 @@ h5,
 h6 {
 	text-rendering: optimizeLegibility;
 	margin-top: 0;
-	color: #774553;
-}
+	color: #774553; }
 
 .tera {
 	font-size: 117px;
@@ -99,8 +95,7 @@ xmp {
 	-moz-hyphens: none; /* Firefox 16 thru 20 */
 	-ms-hyphens: none; /* IE10 */
 	-o-hyphens: none;	 /* PRESTO...haha LOL */
-	hyphens: none;	 /* W3C standard */
-}
+	hyphens: none;	 /* W3C standard */ }
 
 /* Text Elements
 ================================================== */
@@ -139,18 +134,17 @@ sup { top: -0.46em; }
 sub { bottom: -0.24em; }
 
 del, s, strike {
-	text-decoration: line-through; 
-}
+	text-decoration: line-through; }
 
 ins, dfn {
 	font-style: italic;
 	text-decoration: none;
-	border-bottom: 1px solid #666;
-}
+	border-bottom: 1px solid #666; }
 
 /** Abbreviations Markup
-  *
-   <abbr title="hyper text markup language">HMTL</abbr>
+	---
+	Sample :
+	<abbr title="hyper text markup language">HMTL</abbr>
   */
  
 abbr {
@@ -169,16 +163,14 @@ acronym {
 	font-size: 0.8em;
 	text-transform: uppercase;
 	border-bottom: 1px dashed #666;
-	cursor: help;
-	}
+	cursor: help; }
 
 /** All Capital Text **/
-/*
+
 .capitals {
 	font-variant: small-caps;
 	font-weight: 300;
 	text-transform: lowercase; }
-*/
 
 /** Unicode Ampersand **/
 
@@ -200,15 +192,14 @@ acronym {
 
 /**
  * Lining Definition Style Markup
- *
+	---
+	Sample :
 	<dl class="lining">
 		<dt><b></b></dt>
 		<dd></dd>
 	</dl>
- *
- * Extend this object into your markup.
- *
  */
+ 
 .lining dt,
 .lining dd {
 	display: inline;
@@ -229,15 +220,14 @@ acronym {
 
 /**
  * Dictionary Definition Style Markup
- *
+	---
+	Sample :
 	<dl class="dictionary-style">
 		<dt><b></b></dt>
 			<dd></dd>
 	</dl>
- *
- * Extend this object into your markup.
- *
  */
+ 
 .dictionary-style dt {
 	display: inline;
 	counter-reset: definitions;
@@ -255,11 +245,11 @@ acronym {
 }
 
 /** Stats Tab Markup
- *
+	---
+	Sample :
 	<ul class="stats-tabs">
 		<li><a href="#">[value]<b>[name]</b></a></li>
 	</ul>
-  *
   */
   
 .stats-tabs {
@@ -289,14 +279,14 @@ acronym {
 }
 
 /** Blockquote Markup
-  *
+	---
+	Sample :
 	<blockquote cite="">
 		<p>&Prime;&Prime;</p>
 		<cite>
 			<a href=""></a>
 		</cite>
 	</blockquote>
-  * .
   */
 
 blockquote {
@@ -309,7 +299,8 @@ blockquote cite {
 }
 
 /** Pull Quotes Markup
-  *
+	---
+	Sample :
 	<aside class="pull-quote">
 		<blockquote>
 			<p></p>
@@ -317,6 +308,7 @@ blockquote cite {
 	</aside>
   *
   */
+  
 .pull-quote {
 	position: relative;
 	padding: 1em;
@@ -341,20 +333,21 @@ blockquote cite {
 }
 
 /** Figures Markup
-  *
+	---
+	Sample :
 	<figure>
 		<figcaption>
 			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
 		</figcaption>
 	</figure>
-  *
   */
 
 figure {}
 figcaption {}
 
 /** Footnote Markup : Replace 'X' with your unique number for each footnote
-  *
+	---
+	Sample :
 	<article>
 		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
 		<footer>
@@ -363,49 +356,39 @@ figcaption {}
 			</ol>
 		</footer>
 	</article>
-  *
   */
 
 /** Code **/
 
-pre { margin-bottom: 20px; 
-	border: 1px #EEE solid;
-}
+pre { 
+	margin-bottom: 20px; 
+	border: 1px #EEE solid; }
 
 code {
 	white-space: pre;
 	font-family: Courier, "Courier New", Monaco, monospace;
-	font-size: 95%;
-}
+	font-size: 95%; }
 
-pre code
-{
+pre code {
 	word-wrap: normal;
 	white-space: pre-wrap;
 	font-family: Courier, "Courier New", Monaco, monospace;
-	line-height: 130%;
-	font-size: 85%
-	
-}
-
+	line-height: 130%; }
 
 /** Lists **/
-
 
 ul {
 	list-style: disc outside;
 	list-style-color: #774553;
 	margin-left: 3em;
 	margin-bottom: 1em;
-	margin-top: -0.3em;
-}
+	margin-top: -0.3em; }
 
 ol {
 	list-style: decimal outside;
 	list-style-color: #774553;
 	margin-left: 3em;
 	margin-bottom: 1em;
-	margin-top: -0.3em;
-}
+	margin-top: -0.3em; }
 
 li {}
