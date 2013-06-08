@@ -7,22 +7,21 @@ html {
 	font: normal 112.5%/1.65 Georgia, Garamond, "Times New Roman", serif; }
 
 body {
+	/* Accepted values: [ none | manual | auto ] */
+	text-rendering: optimizeLegibility;
+	color: #774553;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
-	word-wrap: break-word;
-	color: #774553; }
+	word-wrap: break-word; }
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-	text-rendering: optimizeLegibility;
-	margin-top: 0;
-	color: #774553; }
+h6 { margin-top: 0; color: #774553; }
 
 .tera {
 	font-size: 117px;
@@ -281,7 +280,7 @@ acronym {
 /** Blockquote Markup
 	---
 	Sample :
-	<blockquote cite="">
+	<blockquote>
 		<p>&Prime;&Prime;</p>
 		<cite>
 			<a href=""></a>
@@ -290,7 +289,7 @@ acronym {
   */
 
 blockquote {
-	font-style: normal;
+	font-style: italic;
 	margin: 1.5em 50px;
 }
 
