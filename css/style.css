@@ -204,7 +204,7 @@ table tr:nth-child(even) {
 	float: right;
 }
 
-/** Alignment **/
+/** Block Alignment **/
 .align-left {
 	display: inline;
 	float: left;
