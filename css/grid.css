@@ -137,7 +137,7 @@
     }
 
     /** Add additional padding to .keep-shape elements
-       to keep to same size as 960 grid version **/
+       to keep to same size as 960 grid version */
 
     .grid.keep-shape, .grid.\31 of12.keep-shape {
       padding: 30px 28.3333px;

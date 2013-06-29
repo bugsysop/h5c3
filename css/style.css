@@ -168,7 +168,7 @@ figcaption strong {
 	text-transform: uppercase;
 }
 
-/** Make sure embeds and iframes fit their containers **/
+/** Make sure embeds and iframes fit their containers */
 embed,
 iframe,
 object {
@@ -179,7 +179,7 @@ object {
 ================================================== */
 
 /** Zebra Look Rows 
-	http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets/ **/
+	http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets/ */
 table tr:nth-child(even) {
     background: rgba(0,0,0,0.1);
 }
@@ -194,7 +194,7 @@ table tr:nth-child(even) {
 */
 
 /** Floats
-	http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets **/
+	http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets */
 
 .float-left /* Or whatever name you like */ {
 	float: left;
@@ -204,7 +204,7 @@ table tr:nth-child(even) {
 	float: right;
 }
 
-/** Block Alignment **/
+/** Block Alignment */
 .align-left {
 	display: inline;
 	float: left;
@@ -221,7 +221,7 @@ table tr:nth-child(even) {
 	margin: 0 auto;
 }
 
-/** Misc **/
+/** Misc */
 .hide {
 	display: none;
 }
