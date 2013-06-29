@@ -3,8 +3,7 @@
 /* Base Typography
 ================================================== */
 
-html {
-	font: normal 112.5%/1.65 Georgia, Garamond, "Times New Roman", serif; }
+html { font: normal 62.5% Georgia, Garamond, "Times New Roman", serif; }
 
 body {
 	/* Accepted values: [ none | manual | auto ] */
@@ -24,49 +23,49 @@ h5,
 h6 { margin-top: 0; color: #774553; }
 
 .tera {
-	font-size: 117px;
-	font-size: 6.5rem;
+	font-size: 100px;
+	font-size: 100rem;
 	margin-bottom: 0.25385rem;}
 
 .giga {
-	font-size: 90px;
-	font-size: 5rem;
+	font-size: 80px;
+	font-size: 8rem;
 	margin-bottom: 0.33rem; }
 
 .mega {
-	font-size: 72px;
-	font-size: 4rem;
+	font-size: 60px;
+	font-size: 6rem;
 	margin-bottom: 0.4125rem; }
 
 h1 {
-	font-size: 60px;
-	font-size: 3.33333rem;
-	margin-bottom: 0.495rem; }
+	font-size: 55px;
+	font-size: 5.5rem;
+	margin-bottom: 0.5rem; }
 
 h2 {
 	font-size: 48px;
-	font-size: 2.66667rem;
-	margin-bottom: 0.61875rem; }
+	font-size: 4.8rem;
+	margin-bottom: 0.61rem; }
 
 h3 {
 	font-size: 36px;
-	font-size: 2rem;
-	margin-bottom: 0.825rem; }
+	font-size: 3.6rem;
+	margin-bottom: 0.85rem; }
 
 h4 {
-	font-size: 24px;
-	font-size: 1.33333rem;
-	margin-bottom: 1.2375rem; }
+	font-size: 30px;
+	font-size: 2.4rem;
+	margin-bottom: 1.2rem; }
 
 h5 {
-	font-size: 21px;
-	font-size: 1.16667rem;
-	margin-bottom: 1.41429rem; }
+	font-size: 25px;
+	font-size: 2.5rem;
+	margin-bottom: 1.3rem; }
 
 h6 {
-	font-size: 18px;
-	font-size: 1rem;
-	margin-bottom: 1.65rem; }
+	font-size: 20px;
+	font-size: 2rem;
+	margin-bottom: 1.4rem; }
 
 /** Hyphens **/
 
