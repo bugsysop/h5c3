@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* Base Typography
 ================================================== */
 
@@ -184,62 +182,7 @@ acronym {
 	font-family: Ampersand, Georgia, serif;
 }
 
-/**
- * Lining Definition Style Markup
-	---
-	Sample :
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
- */
- 
-.lining dt,
-.lining dd {
-	display: inline;
-	margin: 0;
-}
-.lining dt + dt:before,
-.lining dd + dt:before {
-	content: "\A";
-	white-space: pre;
-}
-.lining dd + dd:before {
-	content: ", ";
-}
-.lining dd:before {
-	content: ": ";
-	margin-left: -0.2rem;
-}
-
-/**
- * Dictionary Definition Style Markup
-	---
-	Sample :
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
- */
- 
-.dictionary-style dt {
-	display: inline;
-	counter-reset: definitions;
-}
-.dictionary-style dt + dt:before {
-	content: ", ";
-	margin-left: -0.2rem;
-}
-.dictionary-style dd {
-	display: block;
-	counter-increment: definitions;
-}
-.dictionary-style dd:before {
-	content: counter(definitions, decimal) ". ";
-}
-
-/** Stats Tab Markup
-	---
+/** 
 	Sample :
 	<ul class="stats-tabs">
 		<li><a href="#">[value]<b>[name]</b></a></li>
@@ -302,8 +245,7 @@ blockquote cite .author { text-transform: uppercase; letter-spacing: .1em; }
 blockquote cite .reference { font-style: italic; font-size: 1.15em; }
 
 
-/** Pull Quotes Markup
-	---
+/** 
 	Sample :
 	<aside class="pull-quote">
 		<blockquote>
@@ -349,9 +291,8 @@ blockquote cite .reference { font-style: italic; font-size: 1.15em; }
 figure {}
 figcaption {}
 
-/** Footnote Markup : Replace 'X' with your unique number for each footnote
-	---
-	Sample :
+/** 
+	Sample : Replace 'X' with your unique number for each footnote
 	<article>
 		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
 		<footer>
@@ -398,3 +339,94 @@ ol {
 	margin-top: -0.3em; }
 
 li {}
+
+/* Definition */
+
+dl { margin-bottom: 1em; }
+
+dt,
+dd { line-height: 1.5; }
+
+dt { font-weight: bold; }
+
+dd { margin-left: 2em; }
+
+
+/*
+	Sample :
+	<dl class="dl-lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ */
+ 
+.dl-lining dt,
+.dl-lining dd {
+	display: inline;
+	margin: 0;
+}
+.dl-lining dt + dt:before,
+.dl-lining dd + dt:before {
+	content: "\A";
+	white-space: pre;
+}
+.dl-lining dd + dd:before {
+	content: ", ";
+}
+.dl-lining dd:before {
+	content: ": ";
+	margin-left: -0.2rem;
+}
+
+/*
+	Sample :
+	<dl class="dl-dictionary">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ */
+ 
+.dl-dictionary dt {
+	display: inline;
+	counter-reset: definitions;
+}
+.dl-dictionary dt + dt:before {
+	content: ", ";
+	margin-left: -0.2rem;
+}
+.dl-dictionary dd {
+	display: block;
+	counter-increment: definitions;
+}
+.dl-dictionary dd:before {
+	content: counter(definitions, decimal) ". ";
+}
+
+.dl-horizontal {
+  *zoom: 1;
+}
+
+.dl-horizontal:before,
+.dl-horizontal:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.dl-horizontal:after {
+  clear: both;
+}
+
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dl-horizontal dd {
+  margin-left: 180px;
+}
