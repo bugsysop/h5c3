@@ -138,8 +138,8 @@ img.full {
 	max-width: 100%;
 }
 
-img.align-right, figure.align-right {float: right; margin: 0 0 1.2em 1.2em; padding-top: 0.45em; }
-img.align-left, figure.align-left { float: left; margin: 0 1.2em 1.2em 0; padding-top: 0.45em; }
+img.float-right, figure.float-right {float: right; margin: 0 0 1.2em 1.2em; padding-top: 0.45em; }
+img.float-left, figure.float-left { float: left; margin: 0 1.2em 1.2em 0; padding-top: 0.45em; }
 
 .img-rounded {
   -webkit-border-radius: 6px;
@@ -193,40 +193,37 @@ video { max-width: 100%; }
 /* Tables
 ================================================== */
 
-/** 
-	See : tables.css */
+/* See : tables.css */
 
 /* Utilities
 ================================================== */
+
+
+/** Floats & alignements */
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+/** Block Alignment */
+
+.float-left {
+	display: inline;
+	float: left;
+	margin-right: 1.2em; }
+.float-right {
+	display: inline;
+	float: right;
+	margin-left: 1.2em; }
+.center {
+	clear: both;
+	display: block;
+	margin: 0 auto; }
 
 /*
 .remove-bottom { margin-bottom: 0 !important; }
 .half-bottom { margin-bottom: 10px !important; }
 .add-bottom { margin-bottom: 20px !important; }
 */
-
-/** Floats
-	http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets */
-
-.float-left { float: left; }
-.float-right { float: right; }
-
-/** Block Alignment */
-.align-left {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
-}
-.align-right {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
-}
-.align-center {
-	clear: both;
-	display: block;
-	margin: 0 auto;
-}
 
 /** Misc */
 .hide { display: none; } 
