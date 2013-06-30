@@ -347,9 +347,14 @@ dl { margin-bottom: 1em; }
 dt,
 dd { line-height: 1.5; }
 
-dt { font-weight: bold; }
+dt { 
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-size: 12px;
+  letter-spacing: 0.1em; }
 
-dd { margin-left: 2em; }
+dd { margin-left: 2em; margin-bottom: 0.7em; }
 
 
 /*
@@ -397,6 +402,7 @@ dd { margin-left: 2em; }
 .dl-dictionary dd {
 	display: block;
 	counter-increment: definitions;
+	margin-bottom: 0;
 }
 .dl-dictionary dd:before {
 	content: counter(definitions, decimal) ". ";
@@ -405,18 +411,15 @@ dd { margin-left: 2em; }
 .dl-horizontal {
   *zoom: 1;
 }
-
 .dl-horizontal:before,
 .dl-horizontal:after {
   display: table;
   line-height: 0;
   content: "";
 }
-
 .dl-horizontal:after {
   clear: both;
 }
-
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -425,8 +428,6 @@ dd { margin-left: 2em; }
   text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 2.8;
 }
-
-.dl-horizontal dd {
-  margin-left: 180px;
-}
+.dl-horizontal dd { margin-left: 180px; }
