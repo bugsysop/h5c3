@@ -1,26 +1,66 @@
+/* Build our container.
+======================================= */
+
+.row {
+    width: 100%;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    letter-spacing: -.25em; /* Fixes spacing issues with display: inline-block; */
+  }
+
+
+/* Reset letter spacing for elements in container but not in grid */
+
+.row > * {
+    letter-spacing: 0px;
+  }
+
+/* Fixes letter spacing bug for HTML5 elements */
+/* Also sets a baseline of 100% width to fix android bug where they don't resize with the container */
+
+.row section:not(.grid),
+.row aside:not(.grid),
+.row nav:not(.grid),
+.row article:not(.grid),
+.row header:not(.grid),
+.row footer:not(.grid),
+  .force-grid {
+    letter-spacing: -.25em;
+    width: 100%;
+  }
+.row section:not(.grid) > *,
+.row aside:not(.grid) > *,
+.row nav:not(.grid) > *,
+.row article:not(.grid) > *,
+.row header:not(.grid) > *,
+.row footer:not(.grid) > *,
+.force-grid > * {
+    letter-spacing: 0px;
+  }
+
+
 /* Base styles for all grid components.
 ======================================= */
 
-  .container .grid {
-    display: inline-block;
-    padding: 1.5em;
-    margin: 0;
-    vertical-align: top;
-    position: relative;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .container .grid:not(.force-grid) {
+.row .grid
+{
+	display: inline-block;
+	padding: 0 1.5em 1.5em 0;
+	margin: 0;
+	vertical-align: top;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row .grid:not(.force-grid) {
     letter-spacing: 0px; /* Resets letter spacing */
   }
 
-  .container .grid.remove-padding {
+.row .grid.remove-padding {
     padding: 0;
   }
-
-
 
 /* Set sizes for each component of grid.
 
@@ -119,60 +159,9 @@
        Use class .stick-to-grid to stop grid cells
        from collapsing. */
 
-    .container .grid:not(.stick-to-grid) {
+  .row .grid:not(.stick-to-grid) {
       width: 100%;
       margin: 0;
     }
   }
 
-/* Widen grid to 1280px for large screens.
-======================================= */
-
-  @media screen and (min-width: 1300px) {
-
-    /* Widen container */
-
-    .container {
-      max-width: 1280px;
-    }
-
-    /** Add additional padding to .keep-shape elements
-       to keep to same size as 960 grid version */
-
-    .grid.keep-shape, .grid.\31 of12.keep-shape {
-      padding: 30px 28.3333px;
-    }
-    .grid.\32 of12.keep-shape, .grid.\31 of6.keep-shape {
-      padding: 30px 41.6667px;
-    }
-    .grid.\33 of12.keep-shape, .grid.\31 of4.keep-shape {
-      padding: 30px 55px;
-    }
-    .grid.\34 of12.keep-shape, .grid.\32 of6.keep-shape, .grid.\31 of3.keep-shape {
-      padding: 30px 68.3333px;
-    }
-    .grid.\35 of12.keep-shape {
-      padding: 30px 81.6667px;
-    }
-    .grid.\36 of12.keep-shape, .grid.\33 of6.keep-shape, .grid.\32 of4.keep-shape, .grid.\31 of2.keep-shape {
-      padding: 30px 95px;
-    }
-    .grid.\37 of12.keep-shape {
-      padding: 30px 108.3333px;
-    }
-    .grid.\38 of12.keep-shape, .grid.\34 of6, .grid.\32 of3.keep-shape {
-      padding: 30px 121.6667px;
-    }
-    .grid.\39 of12.keep-shape, .grid.\33 of4.keep-shape {
-      padding: 30px 135px;
-    }
-    .grid.\31 0of12.keep-shape, .grid.\35 of-six.keep-shape {
-      padding: 30px 148.3333px;
-    }
-    .grid.\31 1of12.keep-shape {
-      padding: 30px 161.6667px;
-    }
-    .grid.\31 2of12.keep-shape, .grid.\36 of6.keep-shape, .grid.\34 of4.keep-shape, .grid.\33 of3.keep-shape, .grid.\32 of2.keep-shape, .grid.\31 of1.keep-shape {
-      padding: 30px 175px;
-    }
-  }

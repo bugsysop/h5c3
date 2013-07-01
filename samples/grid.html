@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Grid | h5c3</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	
+	<link rel="stylesheet" id="style-css" href="../css/style.css">
+	<link rel="stylesheet" id="style-typography" href="../css/typography.css">
+	<link rel="stylesheet" id="style-typography" href="../css/grid.css">
+	
+	<style>
+	
+	.sample-header h2 { font-size: 3.5rem; text-align: right;  margin-right: 20px; margin-bottom: 60px; color: #CCC;}
+	h2.sample { font-size: 1.5rem; text-transform: uppercase;  font-family: sans-serif;  font-weight: bold; letter-spacing: .4em; margin-bottom: 20px; color: #BBB; }
+	hr.sample-section { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin: 40px 0 10px 0; }
+	
+	/* Specific to Grid */
+	.grid span { background: rgb(225,120,98); text-align: center; color: white; width: 100%; display: inline-block; padding: 15px 0; font-family: monospace; font-size: 1.4rem; }
+	.grid span.gray{ background: rgb(131,141,151); }
+	#content {position: relative;}
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<header class="sample-header" role="banner">
+		
+				<h2>Grid</h2>
+		</header>
+
+		<div id="content">
+
+		<section class="hfeed">
+		
+			<article class="hentry">
+			
+			<h3>The base grid</h3>
+			
+			<p>Grid system largely inspired by <a href="http://melody.molovo.co.uk/">Melody</a>, an extremely lightweight CSS grid framework. I've adapted and borrowed elements from a number of other frameworks to evolve this into something that meets my needs, and done things a little differently to make it more flexible.</p>
+			
+			<p>No floats means no dodgy IE hacks to try and clear them. Just the nice and clean, display: inline-block;</p>
+			
+			<p>Uses padding and box-sizing: border-box; instead of margin for spacing, which makes it much easier to create a grid-within-a-grid or marginless layouts.</p>
+			
+			<p>If you need spacing, then style the content; If you need a grid without spacing, then style the grid itself, or use the class .remove-padding.</p>
+			
+			<p>&nbsp;</p>
+
+			<div class="row">
+			
+				<div class="grid 1of1"><span>1of1</span></div>
+
+				<div class="grid 1of6"><span>1of6</span></div>
+				<div class="grid 1of6"><span>1of6</span></div>
+				<div class="grid 1of6"><span>1of6</span></div>
+				<div class="grid 1of6"><span>1of6</span></div>
+				<div class="grid 1of6"><span>1of6</span></div>
+				<div class="grid 1of6"><span>1of6</span></div>
+				
+				<div class="grid 1of3"><span>1of3</span></div>
+				<div class="grid 1of3"><span>1of3</span></div>
+				<div class="grid 1of3"><span>1of3</span></div>
+				
+				<div class="grid 1of2"><span>1of2</span></div>
+				<div class="grid 1of2"><span>1of2</span></div>
+				
+				<div class="grid 5of12"><span>5of12</span></div>
+				<div class="grid 2of12"><span>2of12</span></div>
+				<div class="grid 5of12"><span>5of12</span></div>
+				
+				<div class="grid 1of4"><span>1of4</span></div>
+				<div class="grid 1of4"><span>1of4</span></div>
+				<div class="grid 1of4"><span>1of4</span></div>
+				<div class="grid 1of4"><span>1of4</span></div>
+				
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				<div class="grid 1of12"><span>1/12</span></div>
+				
+			</div><!-- row -->
+			
+			<p>&nbsp;</p>
+			
+			<h3>More fun with the grid</h3>
+			
+			<p>Uses the class .stick-to-grid to preserve the width and offset of grid elements at mobile screen sizes.</p>
+			
+			<p>Uses the class .offset-n to add left-margin to an element to create an offset. The value of n is the number of columns (1-12) for the offset.</p>
+			
+			<p>Uses the class .keep-shape to add additional padding to grid elements to keep them at 960-grid size if the grid expands to 1280 wide on large screens.</p>
+			
+			<p>&nbsp;</p>
+			
+			<div class="row">
+				
+				<div class="grid 2of3 offset-4"><span class="gray">2of3.offset-4</span></div>
+				<div class="grid 1of3"><span>1of3</span></div>
+				<div class="grid 1of3 offset-4"><span class="gray">.1of3.offset-4</span></div>
+				
+				<div class="grid 1of3 stick-to-grid"><span class="gray">1of3.stick-to-grid</span></div>
+				<div class="grid 1of3 stick-to-grid"><span class="gray">1of3.stick-to-grid</span></div>
+				<div class="grid 1of3 stick-to-grid"><span class="gray">1of3.stick-to-grid</span></div>
+				
+				<div class="grid 2of3 offset-4 stick-to-grid"><span class="gray">2of3.offset-4.stick-to-grid</span></div>
+				
+				<div class="grid 1of4"><span>grid.1of4</span></div>
+				<div class="grid 2of4 keep-shape"><span class="gray">grid.2of4.keep-shape</span></div>
+				<div class="grid 1of4"><span>grid.1of4</span></div>
+				
+				<div class="grid 2of3 offset-3 stick-to-grid"><span class="gray">2of3.offset-3.stick-to-grid</span></div>
+			
+			</div><!-- row -->
+						
+			</article>
+		</section>
+
+		</div><!-- #content -->
+
+		<footer class="site-footer" role="">
+			<p>&nbsp;</p>	
+			<p>&nbsp;</p>	
+			<p>&nbsp;</p>	
+			<p>&nbsp;</p>			
+		</footer>
+
+		</div><!-- #container -->
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				jQuery(document).ready(function($) {
+					$(’body’).addClass(’ie’);
+				});
+			</script>
+		<![endif]-->
+
+</body>
+
+</html>
