@@ -58,32 +58,10 @@ body {
 
 #container {
 	margin: 0 auto;
-	width: 90%; 
+	width: 100%; 
 	max-width: 1024px;
 	background: #fff; 
 }
-
-/*
-#wrapper {
-	margin: 0 auto;
-	width: 90%; 
-	max-width: 1024px;
-	background: #fff;
-	display: block;
-} 
-
-#wrapper-header, 
-#wrapper-footer {
-	width: 100%; 
-}
-
-#wrapper-header {
-	background: #000;
-}
-#wrapper-footer {
-	background: #eee;
-}
-*/
 
 #content {
 	margin: 0 auto;
@@ -94,11 +72,14 @@ body {
 .site-header {
 	margin: 0 auto;
 	padding-top: 1em;
-	width: 960px; }
+	width: 95%;
+	max-width: 960px;
+	text-align: center; }
 	
 .site-footer {
 	margin: 0 auto;
-	width: 960px; }
+	width: 95%;
+	max-width: 960px; }
 
 /* Navigation
 ================================================== */
