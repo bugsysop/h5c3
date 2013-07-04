@@ -1,7 +1,12 @@
 /* Base Typography
 ================================================== */
 
-html { font: normal 62.5% Georgia, Garamond, "Times New Roman", serif; }
+html { 
+	font: normal 62.5% Georgia, Garamond, "Times New Roman", serif; 
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	}
 
 body {
 	/* Accepted values: [ none | manual | auto ] */
