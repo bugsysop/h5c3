@@ -25,50 +25,35 @@ h4,
 h5,
 h6 { margin-top: 0; color: #774553; }
 
-.tera {
-	font-size: 100px;
-	font-size: 100rem;
-	margin-bottom: 0.25rem;}
-
-.giga {
-	font-size: 80px;
-	font-size: 8rem;
-	margin-bottom: 0.33rem; }
-
-.mega {
-	font-size: 60px;
-	font-size: 6rem;
-	margin-bottom: 0.41rem; }
-
 h1 {
-	font-size: 55px;
-	font-size: 5.5rem;
-	margin-bottom: 0.5rem; }
+	font-size: 45px;
+	font-size: 4.5rem;
+	margin-bottom: 0.7rem; }
 
 h2 {
-	font-size: 48px;
-	font-size: 4.8rem;
-	margin-bottom: 0.61rem; }
+	font-size: 40px;
+	font-size: 4rem;
+	margin-bottom: 0.8rem; }
 
 h3 {
-	font-size: 36px;
-	font-size: 3.6rem;
-	margin-bottom: 0.85rem; }
+	font-size: 35px;
+	font-size: 3.5rem;
+	margin-bottom: 0.8rem; }
 
 h4 {
 	font-size: 30px;
-	font-size: 2.4rem;
-	margin-bottom: 1.2rem; }
+	font-size: 3rem;
+	margin-bottom: 1rem; }
 
 h5 {
 	font-size: 25px;
 	font-size: 2.5rem;
-	margin-bottom: 1.3rem; }
+	margin-bottom: 1rem; }
 
 h6 {
 	font-size: 20px;
 	font-size: 2rem;
-	margin-bottom: 1.4rem; }
+	margin-bottom: 1rem; }
 
 /** Hyphens */
 
@@ -91,17 +76,17 @@ samp,
 tt,
 var,
 xmp {
-	/* Accepted values: [ none | manual | auto ] */
-	-webkit-hyphens: none; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
-	-moz-hyphens: none; /* Firefox 16 thru 20 */
-	-ms-hyphens: none; /* IE10 */
-	-o-hyphens: none;	 /* PRESTO...haha LOL */
-	hyphens: none;	 /* W3C standard */ }
+								/* Accepted values: [ none | manual | auto ] */
+	-webkit-hyphens: none; 		/* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+	-moz-hyphens: none; 		/* Firefox 16 thru 20 */
+	-ms-hyphens: none; 			/* IE10 */
+	-o-hyphens: none;	 		/* PRESTO...haha LOL */
+	hyphens: none;	 			/* W3C standard */ }
 
 /* Text Elements
 ================================================== */
 
-p { margin: 0 0 1em; }
+p { margin: 0 0 1rem; }
 
 p + p {
 	/* text-indent: 1.5em;
