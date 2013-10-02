@@ -23,7 +23,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { margin-top: 0; color: #774553; }
+h6 { margin-top: 0; color: #774553; line-height: 1.1; }
 
 h1 {
 	font-size: 45px;
