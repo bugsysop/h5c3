@@ -106,16 +106,16 @@ p + p {
 }
 
 .drop-cap-2:first-letter {
-	padding: 0.145em 0.125em 0 0;
-	font-size: 3.8em;
+	padding: 0.2em 0.125em 0 0;
+	font-size: 3.4em;
 }
 .drop-cap-3:first-letter {
-	padding: 0.135em 0.125em 0 0;
-	font-size: 5.8em;
+	padding: 0.145em 0.125em 0 0;
+	font-size: 5.7em;
 }
 .drop-cap-4:first-letter {
 	padding: 0.125em 0.125em 0 0;
-	font-size: 7.8em;
+	font-size: 7.9em;
 }
 
 b, strong { font-weight: bold; }
