@@ -33,6 +33,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0; }
 
+/* Fix box layout model to all elements 
+   Inspired by Paul Irish
+   http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+================================================== */
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* Print styles from HTML5 Boilerplate */
 @media print {
   * {
