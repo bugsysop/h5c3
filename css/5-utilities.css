@@ -22,6 +22,14 @@
 	display: block;
 	margin: 0 auto; }
 
+/** Text Alignment */
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-justify { text-align: justify; }
+.align-center { text-align: center; }
+
+
 /*
 .remove-bottom { margin-bottom: 0 !important; }
 .half-bottom { margin-bottom: 10px !important; }

@@ -435,11 +435,3 @@ dd { margin-left: 2em; margin-bottom: 0.7em; }
   line-height: 2.8;
 }
 .dl-horizontal dd { margin-left: 180px; }
-
-/* Utilities
-================================================== */
-
-.align-left { text-align: left; }
-.align-right { text-align: right; }
-.align-justify { text-align: justify; }
-.align-center { text-align: center; }
