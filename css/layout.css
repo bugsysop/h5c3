@@ -1,6 +1,32 @@
 /* Site
 ================================================== */
 
+#container {
+	margin: 0 auto;
+	width: 100%; 
+	max-width: 1024px;
+	background: #fff; 
+}
+
+#content {
+	margin: 0 auto;
+	width: 85%; 
+	max-width: 830px;
+	background: transparent; }
+
+.site-header {
+	margin: 0 auto;
+	padding-top: 1em;
+	width: 95%;
+	max-width: 960px;
+	text-align: center; }
+	
+.site-footer {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px; }
+
+
 #site-branding h1 { 
 	font-size: 2rem;
 	/*margin-top: 1em;*/
