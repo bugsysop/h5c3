@@ -21,7 +21,7 @@ This project is at a very early stage of development.
 ###Inspiration
 
 **Eric Meyer’s “Reset CSS”**  
-[http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/]
+[http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
 
 **Readability**  
 [http://lab.arc90.com/2009/03/02/readability/](http://lab.arc90.com/2009/03/02/readability/)
