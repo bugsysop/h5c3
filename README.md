@@ -30,7 +30,7 @@ This project is at a very early stage of development.
 [http://typeplate.com/](http://typeplate.com/)  
 [https://github.com/typeplate](https://github.com/typeplate)  
 
-**Tiny Typo**
+**Tiny Typo**  
 [http://tinytypo.tetue.net/](http://tinytypo.tetue.net/)
 
 ###Licence
