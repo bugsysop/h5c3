@@ -1,4 +1,4 @@
-Nice Typography Kit
+Minimal Typography
 ====
 
 A simple base kit for html5 and css3 building, with strong focus on typography & readability.
