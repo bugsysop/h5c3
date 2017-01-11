@@ -19,8 +19,8 @@ a { cursor: pointer; }
 a, a:visited {
 	text-decoration: none;
 	color: #68ADC3;
-	font-weight: bold;
-	/*font-weight: 700;*/
+	/*font-weight: bold;
+	font-weight: 700;*/
 }
 a:hover, a:active {}
 
