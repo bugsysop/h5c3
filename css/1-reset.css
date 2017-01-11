@@ -15,19 +15,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: none;
 	text-decoration: none; }
 
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
-	display: block; }
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section { display: block; }
+audio, canvas, progress, video { display: inline-block; }
+abbr, eventsource, mark, meter, time, output, bb { display: inline; }
 
 body { line-height: 1; }
 
 ol, ul { list-style: none; }
 
-blockquote, q {
-	quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
 table {
 	border-collapse: collapse;
@@ -38,11 +35,8 @@ table {
    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 ================================================== */
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+html { box-sizing: border-box; }
+*:before, *:after { box-sizing: inherit; }
 
 /* Print styles from HTML5 Boilerplate */
 @media print {
@@ -52,4 +46,15 @@ table {
     background: transparent !important;
     box-shadow: none !important;
   }
+}
+
+/* Fix base font size size at 10px
+   Inspired by Nicolas Hoffmann & Röcssti & Many others
+   https://rocssti.net/
+================================================== */
+
+html {
+  font-size: 62.5%;
+  /* IE9-IE11 math fixing. See https://connect.microsoft.com/IE/feedback/details/816709/ */
+  font-size: calc(1em * 0.625);
 }
