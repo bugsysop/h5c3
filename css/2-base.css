@@ -1,10 +1,15 @@
 /* Structure
 ================================================== */
 
-body { 
-	background: #eee; 
-	font: normal 1.8rem/1.65 Georgia, "Times New Roman", serif;
+body {
+  background: #eee;
+  color: #333;
+  font-family: Georgia, "Times New Roman", Times serif;
+  font-size: 1.8em; /* equiv 18px */
+  font-size: 1.8rem; /* equiv 18px */
+  line-height: 1.7; /* to update if needed */
 }
+
 
 /* Links
 ================================================== */
@@ -59,7 +64,7 @@ figure img {
 	/*margin-bottom: 1.2em;
 	margin-top: 1.2em;*/
 }
-	
+
 figcaption {
 	width: 100%;
 	height: auto;
@@ -86,6 +91,3 @@ video { max-width: 100%; }
 ================================================== */
 
 /* See : tables.css */
-
-
-
